@@ -6,6 +6,18 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  data(){
+    return{
+      blogs:[]
+    }
+  },
+  async fetch(){
+    this.blogs = await this.$content('blog').fetch()
+  },
 }
 </script>
+
+<style scoped>
+
+</style>
