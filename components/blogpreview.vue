@@ -1,16 +1,16 @@
 <template>
     <div>
-        <nuxt-link>
-            
+        <nuxt-link :to="{ name:'slug', params:{slug:slug}}">
             <h3>{{ title }}</h3>
-            <p>{{description}}</p>
+            <p>{{desc}}</p>
+            <!-- <img src="" alt=""> -->
         </nuxt-link>
     </div>
 </template>
 
 <script>
     export default {
-        name:"blogpreview",
+        name:"BlogPreview",
          
     }
 </script>

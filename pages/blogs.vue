@@ -5,6 +5,13 @@
     https://vuejs.org/examples/#svg
     https://vuejs.org/examples/#crud
     -->
+    <BlogPreview
+      v-for="blogs in blog"
+      :key="blogs.title"
+      :title="blogs.title"
+      :desc="blogs.description"
+      :slug="blogs.slug"
+    ></BlogPreview>
   </div>
 </template>
 
