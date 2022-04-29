@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{}}</h1>
-        
+        <h2>{{article.title}}</h2>
+        <nuxt-content :document="article" />
     </div>
 </template>
 
