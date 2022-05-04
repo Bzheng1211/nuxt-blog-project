@@ -8,7 +8,7 @@ public_folder: /img
 media_library:
   name: cloudinary
   config:
-    cloud_name: dfthmjy1i,
+    cloud_name: dfthmjy1i
     api_key: 828742897268572
 
 collections:
