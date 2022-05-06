@@ -9,7 +9,7 @@ media_library:
     api_key: 828742897268572
     default_transformations:
       - - fetch_format: auto
-          width: 160
+          width: 300
           quality: auto
           crop: scale
 
