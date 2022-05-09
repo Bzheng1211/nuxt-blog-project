@@ -2,9 +2,9 @@
     <div class="head">
         <h2 class="name">Fierfud</h2>
         <section class="buttons">
-            <button class="btnh home">Home</button>
-            <button class="btnh blogs">Blogs</button>
-            <button class="btnh logIn">Log In</button>
+            <nuxt-link to="/">Home</nuxt-link>
+            <nuxt-link to="/blogs">Blogs</nuxt-link>
+            <nuxt-link to="/admin">Log In</nuxt-link>
         </section>
     </div>
 </template>

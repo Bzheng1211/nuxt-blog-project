@@ -10,6 +10,8 @@
       :key="blogs.title"
       :title="blogs.title"
       :desc="blogs.description"
+      :image="blogs.image"
+      :imgAlt="blogs.imageAlt"
       :slug="blogs.slug"
     ></BlogPreview>
   </div>
