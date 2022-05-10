@@ -5,10 +5,15 @@
     https://vuejs.org/examples/#svg
     https://vuejs.org/examples/#crud
     -->
+    <form id="search">
+      <input name="query" v-model="searchQuery">
+    </form>
     <BlogPreview
       v-for="blogs in blog"
+      :filter-blog="searchQuery"
       :key="blogs.title"
       :title="blogs.title"
+      :author="blogs.author"
       :desc="blogs.description"
       :image="blogs.image"
       :imgAlt="blogs.imageAlt"
@@ -21,8 +26,8 @@
 export default {
   name: 'BlogPage',
   data(){
-    return{
-      blogs:[]
+    return {
+      searchQuery:"",
     }
   },
   async fetch(){
