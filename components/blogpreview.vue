@@ -22,8 +22,18 @@
             }
         },
         computed:{
-
+            filteredData(){
+                const sortBlog= this.sortBlog
+                const filterBlog=this.filterblog && this.filterblog.toLowerCase()
+                let data=this.title
+                
+            }
         },
+        methods: {
+            sortBy(key) {
+                this.sortBlog = key
+            },
+        }
     }
 
 </script>
