@@ -10,16 +10,15 @@
       <input name="query" v-model="searchQuery">
     </form>
     <BlogPreview
-      v-for="blogs in blog"
+      v-for="blog in blogs"
       :filter-blog="searchQuery"
-      :cards="card"
-      :key="blogs.title"
-      :title="blogs.title"
-      :author="blogs.author"
-      :desc="blogs.description"
-      :image="blogs.image"
-      :imgAlt="blogs.imageAlt"
-      :slug="blogs.slug"
+      :key="blog.id"
+      :title="blog.title"
+      :author="blog.author"
+      :desc="blog.description"
+      :image="blog.image"
+      :imgAlt="blog.imageAlt"
+      :slug="blog.slug"
     ></BlogPreview>
   </div>
 </template>
@@ -30,7 +29,6 @@ export default {
   data(){
     return {
       searchQuery:"",
-      card:['title','author']
     }
   },
   async fetch(){

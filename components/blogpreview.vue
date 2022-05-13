@@ -29,7 +29,7 @@
             filteredData(){
                 const sortBlog = this.sortBlog
                 const filterBlog=this.filterblog && this.filterblog.toLowerCase()
-                let data=this.title
+                let data=this.data
                 if (filterBlog) {
                     data = data.filter((row) => {
                         return Object.keys(row).some((key) => {
