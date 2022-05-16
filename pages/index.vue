@@ -1,5 +1,5 @@
 <template>
-  <div class="body">
+  <div class="first">
     <h2></h2>
     
   </div>

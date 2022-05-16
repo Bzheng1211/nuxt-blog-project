@@ -2,9 +2,10 @@
     <div class="head">
         <h2 class="name">Fierfud</h2>
         <section class="buttons">
+            <button @click="changeTheme">Change theme</button>
             <nuxt-link to="/">Home</nuxt-link>
             <nuxt-link to="/blogs">Blogs</nuxt-link>
-            <nuxt-link to="/admin">Log In</nuxt-link>
+            <nuxt-link to="/admin">Create Blog</nuxt-link>
         </section>
     </div>
 </template>

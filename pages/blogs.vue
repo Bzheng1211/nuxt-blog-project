@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="first">
     <!-- // 
     https://vuejs.org/examples/#grid 
     https://vuejs.org/examples/#svg
@@ -37,6 +37,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 
 </style>
