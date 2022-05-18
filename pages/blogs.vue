@@ -1,11 +1,11 @@
 <template>
-  <div class="first" :class="{theme: theme}">
+  <div>
     <!-- // 
     https://vuejs.org/examples/#grid 
     https://vuejs.org/examples/#svg
     https://vuejs.org/examples/#crud
     -->
-    <Header :theme="theme"/>
+    <Header :theme="theme"></Header>
     <form id="search">
       <input name="query" v-model="searchQuery">
     </form>
@@ -29,7 +29,7 @@ export default {
   data(){
     return {
       searchQuery:"",
-      theme:""
+      theme:"First"
     }
   },
   async fetch(){

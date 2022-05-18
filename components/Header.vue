@@ -1,5 +1,5 @@
 <template>
-    <div class="head">
+    <div class="head" :class="theme==='Second'?'First':'Second'">
         <h2 class="name">Fierfud</h2>
         <section class="buttons">
             <button @click="changeTheme">Change theme</button>
@@ -13,6 +13,14 @@
 <script>
     export default {
         name:"Header",
+        props:{
+            theme: String,
+        },
+        methods:{
+            changeTheme(){
+                this.theme=this.theme==="Second"?"First":"Second";
+            }
+        },
     }
 </script>
 

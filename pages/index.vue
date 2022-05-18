@@ -1,7 +1,6 @@
 <template>
-  <div class="first">
-    <h2></h2>
-    
+  <div>
+    <Header :theme="theme"></Header>
   </div>
 </template>
 
@@ -10,7 +9,8 @@ export default {
   name: 'IndexPage',
   data(){
     return{
-      blogs:[]
+      blogs:[],
+      theme:"First"
     }
   },
   async fetch(){
