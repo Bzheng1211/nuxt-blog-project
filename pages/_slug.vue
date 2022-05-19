@@ -4,6 +4,7 @@
         :theme="theme"
         ></Header>
         <h2>{{article.title}}</h2>
+        <img :src="article.image" :alt="article.imageAlt">
         <nuxt-content :document="article" />
     </div>
 </template>

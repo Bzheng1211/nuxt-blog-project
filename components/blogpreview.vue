@@ -13,11 +13,10 @@
     export default {
         name:"BlogPreview",
         props:{
-            cards:Array,
-            data:{
-                title: String,
-                author: String,
-            },
+            // data:{
+            //     title: String,
+            //     author: String,
+            // },
             filterblog: String,
         },
         data(){
@@ -27,29 +26,29 @@
         },
         computed:{
             filteredData(){
-                const sortBlog = this.sortBlog
-                const filterBlog=this.filterblog && this.filterblog.toLowerCase()
-                let data=this.data
-                if (filterBlog) {
-                    data = data.filter((row) => {
-                        return Object.keys(row).some((key) => {
-                            return String(row[key]).toLowerCase().indexOf(filterBlog) > -1
-                        })
-                    })
-                }
-                if (sortBlog){
-                        data = data.slice().sort((a,b)=>{
-                        a=a[sortBlog]
-                        b=b[sortBlog]
-                    })
-                }
-                return data
+                // const sortBlog = this.sortBlog
+                // const filterBlog=this.filterblog && this.filterblog.toLowerCase()
+                // let data=this.data
+                // if (filterBlog) {
+                //     data = data.filter((row) => {
+                //         return Object.keys(row).some((key) => {
+                //             return String(row[key]).toLowerCase().indexOf(filterBlog) > -1
+                //         })
+                //     })
+                // }
+                // if (sortBlog){
+                //         data = data.slice().sort((a,b)=>{
+                //         a=a[sortBlog]
+                //         b=b[sortBlog]
+                //     })
+                // }
+                // return data
             }
         },
         methods: {
-            sortBy(key) {
-                this.sortBlog = key
-            },
+            // sortBy(key) {
+            //     this.sortBlog = key
+            // },
         }
     }
 </script>
