@@ -33,9 +33,8 @@ export default {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
-    grid-template-areas: "header header";
   }
   .heading{
-    grid-area: header;
+    grid-column: 1/-1;
   }
 </style>

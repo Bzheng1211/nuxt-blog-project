@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blogshowcase">
     <!-- // 
     https://vuejs.org/examples/#grid 
     https://vuejs.org/examples/#svg
@@ -38,6 +38,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.blogshowcase{
+  display: grid;
+  grid-template-columns: 25%;
+}
 </style>
