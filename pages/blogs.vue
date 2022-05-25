@@ -1,16 +1,11 @@
 <template>
   <div class="blogshowcase">
-    <!-- // 
-    https://vuejs.org/examples/#grid 
-    https://vuejs.org/examples/#svg
-    https://vuejs.org/examples/#crud
-    -->
     <Header :theme="theme"></Header>
     <form id="search">
-      <input name="query" v-model="searchQuery">
+      <input name="query" placeholder="Search" v-model="searchQuery">
     </form>
     <BlogPreview
-      v-for="blog in blogs"
+      v-for="blog in filter"
       :filter-blog="searchQuery"
       :key="blog.id"
       :title="blog.title"
@@ -30,6 +25,15 @@ export default {
     return {
       searchQuery:"",
       theme:"First"
+    }
+  },
+  computed:{
+    filter: function(){
+      if (this.searchQuery.drop==='All') {
+      return this.blogs
+      } else {
+        return this.blogs.filter((blog)=>blog.tag.includes(this.value.drop))
+      }
     }
   },
   async fetch(){
