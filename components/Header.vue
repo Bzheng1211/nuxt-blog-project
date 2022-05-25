@@ -24,7 +24,7 @@
     }
 </script>
 
-<style scoped>
+<style>
     .name{
         color: var(--white);
         flex: 50%;

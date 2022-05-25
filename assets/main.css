@@ -8,10 +8,10 @@ body,
 }
 :root {
   /* First Theme */
-  --grey: #555555;
+  --red-grey: #534545;
   --red: #ff2600;
   --orange: #ff5100;
-  --yellow: #ffd000;
+  --brown-black: #2c2020;
   --black: #000000;
   /* Second Theme */
   --black-grey: #1a1a1d;
@@ -21,11 +21,11 @@ body,
   --white-blue: #62bcf3;
   --white: #ffffff;
   /* Intentions */
-  --primary: var(--grey);
+  --primary: var(--red-grey);
   --secondary: var(--black);
   --tertiary: var(--red);
   --quarternary: var(--orange);
-  --quinary: var(--yellow);
+  --quinary: var(--brown-black);
   /* Typography */
   --h1: 3.052rem;
   --h2: 2.441rem;
@@ -34,11 +34,11 @@ body,
   --h5: 1.25rem;
 }
 .First {
-  --primary: var(--grey);
+  --primary: var(--red-grey);
   --secondary: var(--black);
   --tertiary: var(--red);
   --quarternary: var(--orange);
-  --quinary: var(--yellow);
+  --quinary: var(--brown-black);
 }
 .Second {
   --primary: var(--black-grey);
