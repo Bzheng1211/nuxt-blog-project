@@ -2,10 +2,10 @@
     <div class="head" :class="theme==='Second'?'First':'Second'">
         <h2 class="name">Fierfud</h2>
         <section class="buttons">
-            <button @click="changeTheme">Change theme</button>
-            <nuxt-link to="/">Home</nuxt-link>
-            <nuxt-link to="/blogs">Blogs</nuxt-link>
-            <nuxt-link to="/admin">Create Blog</nuxt-link>
+            <button class="button 1" @click="changeTheme">Change theme</button>
+            <nuxt-link class="button 2" to="/">Home</nuxt-link>
+            <nuxt-link class="button 3" to="/blogs">Blogs</nuxt-link>
+            <nuxt-link class="button 4" to="/admin">Create Blog</nuxt-link>
         </section>
     </div>
 </template>
@@ -25,17 +25,15 @@
 </script>
 
 <style>
-    .name{
-        color: var(--white);
-        flex: 50%;
-    }
     .head{
         display: flex;
-        height: 5%;
-        width: 100%;
     }
-    .btnh{
+    .button{
+        font-size: var(--h3);
+    }
+    .name{
+        color: var(--tertiary);
         font-size: var(--h2);
-
     }
+
 </style>
