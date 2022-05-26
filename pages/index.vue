@@ -27,8 +27,8 @@ export default {
 <style scoped>
   .body{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
+    background-color: var(--primary);
+    font-family: 'Titillium Web', sans-serif;
   }
   .heading{
     grid-column: 1/-1;

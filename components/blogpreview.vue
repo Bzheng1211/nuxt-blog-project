@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="previewBody">
         <img class="previewImg" :src="{image}" :alt="{imgAlt}">
         <h3>{{title}} by: {{author}}</h3>
         <p>{{desc}}</p>
@@ -20,7 +20,10 @@
     }
 </script>
 
-<style scoped>
+<style>
+    .previewBody{
+        font-family: 'Titillium Web', sans-serif;
+    }
     .previewImg{
         width: 100%;
         height: 50%;

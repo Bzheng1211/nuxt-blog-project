@@ -1,12 +1,10 @@
 <template>
     <div class="head" :class="theme==='Second'?'First':'Second'">
         <h2 class="name">Fierfud</h2>
-        <section class="buttons">
-            <button class="button 1" @click="changeTheme">Change theme</button>
-            <nuxt-link class="button 2" to="/">Home</nuxt-link>
-            <nuxt-link class="button 3" to="/blogs">Blogs</nuxt-link>
-            <nuxt-link class="button 4" to="/admin">Create Blog</nuxt-link>
-        </section>
+        <button class="button 2"><nuxt-link to="/"><h3>Home</h3></nuxt-link></button>
+        <button class="button 1" @click="changeTheme"><h3>Theme</h3></button>
+        <button class="button 3"><nuxt-link to="/blogs"><h3>Blogs</h3></nuxt-link></button>
+        <button class="button 3"><nuxt-link to="/admin"><h3>Create Blog</h3></nuxt-link></button>
     </div>
 </template>
 
@@ -26,14 +24,28 @@
 
 <style>
     .head{
-        display: flex;
+        display: grid;
+        font-family: 'Titillium Web', sans-serif;
+        height: 15%;
+        gap: 1rem;
+        grid-template-columns: 5fr repeat(4, 1fr);
     }
     .button{
-        font-size: var(--h3);
+        color: var(--quarternary);
+        border: none;
+        background-color: var(--primary);
+
     }
     .name{
         color: var(--tertiary);
         font-size: var(--h2);
     }
-
+    a:link {
+        color: var(--quarternary);
+        text-decoration: none;
+    }
+    a:visited {
+        color: var(--quarternary);
+        text-decoration: none;
+    }
 </style>

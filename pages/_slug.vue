@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="slugBody">
         <Header
         :theme="theme"
         ></Header>
@@ -23,6 +23,8 @@
     }
 </script>
 
-<style scoped>
-
+<style>
+    .slugBody{
+        font-family: 'Titillium Web', sans-serif;
+    }
 </style>
