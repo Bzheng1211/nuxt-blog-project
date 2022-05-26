@@ -5,7 +5,7 @@
       <input name="query" placeholder="Search" v-model="searchQuery">
     </form>
     <BlogPreview
-      v-for="blog in filteredBlog"
+      v-for="blog in filteredBlogs"
       :filter-blog="searchQuery"
       :key="blog.id"
       :title="blog.title"
@@ -24,7 +24,8 @@ export default {
   data(){
     return {
       searchQuery:"",
-      theme:"First"
+      theme:"First",
+      
     }
   },
   computed:{
