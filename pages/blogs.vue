@@ -5,7 +5,7 @@
       <input name="query" placeholder="Search" v-model="searchQuery">
     </form>
     <BlogPreview
-      v-for="blog in filter"
+      v-for="blog in filteredBlog"
       :filter-blog="searchQuery"
       :key="blog.id"
       :title="blog.title"
@@ -28,12 +28,10 @@ export default {
     }
   },
   computed:{
-    filter: function(){
-      if (this.searchQuery.drop==='All') {
-      return this.blogs
-      } else {
-        return this.blogs.filter((blog)=>blog.tag.includes(this.value.drop))
-      }
+    filteredBlogs: function(){
+      return this.blogs.filter((blog)=>{
+        return blog.title.toLowerCase().match(this.searchQuery.toLowerCase())
+      })
     }
   },
   async fetch(){
@@ -42,7 +40,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .blogshowcase{
   display: grid;
   grid-template-columns: 25%;
