@@ -25,14 +25,14 @@ export default {
     return {
       searchQuery:"",
       theme:"First",
-      
+      blogs:[]
     }
   },
   computed:{
     filteredBlogs: function(){
-      return this.blogs.filter((blog)=>{
-        return blog.title.toLowerCase().match(this.searchQuery.toLowerCase())
-      })
+        return this.blogs.filter((blog) =>
+          blog.title.includes(this.searchQuery)
+        )
     }
   },
   async fetch(){
