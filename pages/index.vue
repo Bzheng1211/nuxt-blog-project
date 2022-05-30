@@ -28,9 +28,13 @@ export default {
   .body{
     display: grid;
     background-color: var(--primary);
+    min-height: 100%;
     font-family: 'Titillium Web', sans-serif;
   }
   .heading{
     grid-column: 1/-1;
+  }
+  .frontWord{
+    height: 100%;
   }
 </style>
