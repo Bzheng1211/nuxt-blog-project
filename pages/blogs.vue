@@ -5,7 +5,7 @@
         <button class="button 2"><nuxt-link to="/"><h3>Home</h3></nuxt-link></button>
         <button class="button 1" @click="changeTheme"><h3>Theme</h3></button>
         <button class="button 3"><nuxt-link to="/blogs"><h3>Blogs</h3></nuxt-link></button>
-        <button class="button 3"><nuxt-link to="/admin"><h3>Create Blog</h3></nuxt-link></button>
+        <button class="button 3"><nuxt-link to="/admin/#/"><h3>Create Blog</h3></nuxt-link></button>
     </div>
     <form id="search">
       <input name="query" placeholder="Search" v-model="searchQuery">
