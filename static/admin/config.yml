@@ -30,3 +30,4 @@ collections:
       - { label: "Image", name: "image", widget: "image", choose_url: "false" }
       - { label: "Description of Image", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
