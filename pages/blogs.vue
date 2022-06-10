@@ -10,7 +10,7 @@
     <form id="search">
       <input name="query" placeholder="Search" v-model="searchQuery">
     </form>
-    <div class="blogpreview" v-for="blog in blogs" :key="blog.title">
+    <div class="blogpreview" v-for="blog in filteredBlogs" :key="blog.title">
       <img src="" alt="">
       <nuxt-link :to="{ name: 'slug' , params:{slug:blog.slug} }"><h3>{{blog.title}}</h3></nuxt-link>
       <p>{{blog.description}}</p>
